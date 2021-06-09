@@ -576,6 +576,27 @@ p{
     margin: 1.5%;
   }
 
+  /* Project */
+	#properties .properties-item {
+		flex-direction: row;
+	}
+	#properties .properties-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	/* #properties .properties-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 20;
+	} */
+	#properties .all-properties .properties-info {
+		height: 100%;
+	}
+	#properties .all-properties .properties-img {
+		height: 100%;
+	}
+	/* End Project */
+
   /* Contact */ 
   #contact .contact{
     flex-direction: column;
