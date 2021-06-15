@@ -422,7 +422,7 @@ p {
 #properties .properties-info {
   padding: 30px;
   flex-basis: 50%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #29323c 25%, #485563 100%); 
   color: whitesmoke;
   height: 100%;
   display: flex;
@@ -610,12 +610,12 @@ p {
     flex-direction: row-reverse;
   }
 
-  /* #properties .properties-item {
+  #properties .properties-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 20;
-	} */
+	}
   #properties .all-properties .properties-info {
     height: 100%;
   }
