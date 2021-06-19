@@ -1,25 +1,25 @@
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
-const header = document.querySelector('.header.container');
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.navbar .navbar-menu');
+const menuItem = document.querySelectorAll('.navbar .nav-link');
+const header = document.querySelector('header');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
 });
 
 document.addEventListener('scroll', () => {
-    var scroll_position = window.scrollY;
-    if (scroll_position > 250) {
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > 250) {
         header.style.backgroundColor = "black";
     } else {
         header.style.backgroundColor = "transparent";
     }
 });
 
-menu_item.forEach(item => {
+menuItem.forEach(item => {
     item.addEventListener('click', () => {
         hamburger.classList.toggle('active');
-        mobile_menu.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
     })
 })

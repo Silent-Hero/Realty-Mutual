@@ -6,54 +6,56 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="./app.js"></script>
         <title>Real Estate</title>
     </head>
 
     <body>
-        <!-- Header -->
-        <section id="header">
-            <div class="header container">
-                <div class="nav-bar">
-                    <div class="brand">
-                        <a href="#hero">
-                            <h1><span>R</span>ealty <span>M</span>utual</h1>
-                        </a>
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <a class="brand" href="index.html"><span>R</span>ealty <span>M</span>utual</a>
+                    <div class="hamburger">
+                        <div class="bar"></div>
                     </div>
-                    <div class="nav-list">
-                        <div class="hamburger">
-                            <div class="bar"></div>
-                        </div>
-                        <ul>
-                            <li><a href="index.html" data-after="Home">Home</a></li>
-                            <li><a href="services.html" data-after="Services">Services</a></li>
-                            <!-- <ul>
-                                <li><a href="https://republic.co/real-estate/austin-flipsters">Flippers</a></li>
-                            </ul> -->
-                            <li><a href="properties.html" data-after="Properties">Projects</a></li>
-                            <li><a href="about.html" data-after="About">About</a></li>
-                            <li><a href="contact.html" data-after="Contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+                    <ul class="navbar-menu">
+                        <li><a class="nav-link" href="index.html" data-after="Home">Home</a></li>
+                        <li class="dropdown">
+                            <a class="nav-link" href="services.html" data-after="Services">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">Link 1 </a></li>
+                                <li><a class="nav-link" href="#">Link 2</a></li>
+                                <li><a class="nav-link" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="properties.html" data-after="Properties">Projects</a></li>
+                        <li><a class="nav-link" href="about.html" data-after="About">About</a></li>
+                        <li><a class="nav-link" href="contact.html" data-after="Contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
+        </header>
+        
         <!-- Hero Section -->
         <section id="hero">
-            <div class="hero container">
-                <div>
+            <div class="vh-100 container flex flex-middle px-5">
+                <div class="hero-body w-100">
+                <div class="hero-title mb-5">
                     <h1> "Home is <span> </span></h1>
                     <h1> where our <span> </span></h1>
                     <h1> story begins..." <span> </span></h1>
                 </div>
+                <div>
+                <a href="contact.html" class="btn btn-hero btn-primary">Get a Free Consultation!</a>
+                </div>
             </div>
+
+             </div>
         </section>
+
         <!-- Footer Section -->
         <section id="footer">
-            <div class="footer container">
-                <div class="brand">
-                    <h1><span>R</span>ealty <span>M</span>utual</h1>
-                </div>
+            <div class="footer flex flex-middle flex-center">
+                <div class="brand"><span>R</span>ealty <span>M</span>utual</div>
                 <h2>follow us on social media</h2>
                 <div class="social-icon">
                     <div class="social-item">
@@ -71,6 +73,7 @@
         </section>
         <!-- End Footer Section -->
 
+        <script src="app.js"> </script>
     </body>
 
 </html>

@@ -2,65 +2,66 @@
 
 <body>
     <!-- Header -->
-    <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a href="#hero">
-                        <h1><span>R</span>ealty <span>M</span>utual</h1>
-                    </a>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a class="brand" href="index.html"><span>R</span>ealty <span>M</span>utual</a>
+                <div class="hamburger">
+                    <div class="bar"></div>
                 </div>
-                <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"></div>
-                    </div>
-                    <ul>
-                        <li><a href="index.html" data-after="Home">Home</a></li>
-                        <li><a href="services.html" data-after="Services">Services</a></li>
-                        <li><a href="properties.html" data-after="Properties">Projects</a></li>
-                        <li><a href="about.html" data-after="About">About</a></li>
-                        <li><a href="contact.html" data-after="Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+                <ul class="navbar-menu">
+                    <li><a class="nav-link" href="index.html" data-after="Home">Home</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="services.html" data-after="Services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link" href="#">Link 1 </a></li>
+                            <li><a class="nav-link" href="#">Link 2</a></li>
+                            <li><a class="nav-link" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="properties.html" data-after="Properties">Projects</a></li>
+                    <li><a class="nav-link" href="about.html" data-after="About">About</a></li>
+                    <li><a class="nav-link" href="contact.html" data-after="Contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="vh-100 flex flex-middle">
         <div class="contact container">
             <div>
-                <h1 class="section-title"> Contact Info</h1>
+                <h1 class="section-title">Contact Info</h1>
             </div>
             <div class="contact-items">
-                <div class="contact-item">
+                <a href="tel:+12341231234" class="contact-item">
                     <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/phone.png" /></div>
                     <div class="contact-info">
                         <h1>Phone</h1>
                         <h2>234-123-1234</h2>
                     </div>
-                </div>
-                <div class="contact-item">
+                </a>
+                <a href="mailto:info@gmail.com" target="_blank" class="contact-item">
                     <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/email.png" /></div>
                     <div class="contact-info">
                         <h1>Email</h1>
                         <h2>info@gmail.com</h2>
                         <h2>abd@gmail.com</h2>
                     </div>
-                </div>
-                <div class="contact-item">
+                </a>
+                <a href="https://goo.gl/maps/1nMQWMKZSaBy31Xh7" target="_blank" class="contact-item">
                     <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/address.png" /></div>
                     <div class="contact-info">
-                        <h1>Addres</h1>
+                        <h1>Address</h1>
                         <h2>900 S Rio Street Denver CO 86421</h2>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
     <!-- End Contact Section -->
     <!-- Footer Section -->
     <section id="footer">
-        <div class="footer container">
+        <div class="footer container flex flex-middle flex-center">
             <div class="brand">
                 <h1><span>R</span>ealty <span>M</span>utual</h1>
             </div>
@@ -80,4 +81,6 @@
         </div>
     </section>
     <!-- End Footer Section -->
+
+    <script src="app.js"> </script>
 </body>
